@@ -1,3 +1,5 @@
+I followed the ngGirl's To-Do List App tutorial and added my own flair. I started coding in 2019 and love the organization of Angular! When I am not coding, I am working on the farm, cooking in the kitchen, or spending time with family.
+
 # ToDoList
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.5.

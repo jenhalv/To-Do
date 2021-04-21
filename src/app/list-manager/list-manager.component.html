@@ -1,0 +1,17 @@
+<div class="todo-app">
+  <img alt="Jennifer Bitmoji" src="assets/Jen.png"/>
+
+  <div class="list">
+  <app-input-button-unit (submit)="addItem($event)"></app-input-button-unit>
+
+  <ul>
+    <li *ngFor="let todoItem of todoList">
+        <app-todo-item
+        [item]="todoItem"
+        (remove)="removeItem($event)"
+        (update)="updateItem($event.item, $event.changes)">
+      </app-todo-item>
+    </li>
+  </ul>
+</div>
+</div>

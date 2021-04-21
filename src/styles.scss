@@ -1,1 +1,48 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'https://fonts.googleapis.com/css?family=Material+Icons';
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined");
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+html, body, div, span,
+h1, p, ul, li {
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+// html {
+//   scroll-behavior: smooth;
+// }
+
+body {
+  // margin-top: 145px;
+  margin-top: 35px;
+  background: #f1f1f1;
+  font-size: 16px;
+  line-height: 22px;
+  color: #404040;
+  font-family: 'Lucida Grande', Verdana, sans-serif;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+.btn {
+  background: #acaaa9;
+  color: #c3002f;
+  padding: 3px 10px;
+  margin: 0 0 0 3px;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  line-height: 24px;
+  cursor: pointer;
+  vertical-align: bottom;
+}
+
+.btn:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  transition: background-color .5s, color 500ms, font-size 500ms linear;
+}

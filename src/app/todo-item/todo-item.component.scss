@@ -1,0 +1,27 @@
+.todo-checkbox {
+  flex-shrink: 0;
+  margin: auto 1ex auto 0;
+}
+
+.todo-title {
+  flex-grow: 1;
+  padding: 0px 10px;
+}
+
+.todo-complete {
+  text-decoration: line-through;
+  }
+
+  .material-icons-outlined {
+    font-size: 30px;
+    color: #c3002f;
+    line-height: inherit;
+    float: right;
+  }
+
+  .material-icons-outlined:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: background-color .5s, color 500ms, font-size 500ms linear;
+  }

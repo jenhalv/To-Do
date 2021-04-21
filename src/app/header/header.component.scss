@@ -1,0 +1,97 @@
+.toolbar {
+  position: absolute;
+  max-width: 1000px;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: left;
+  // display: flex;
+  // align-items: center;
+  color: #c3002f;
+  padding: 10px 0px;
+  // justify-content: center;
+}
+
+.left {
+  float: left;
+  display: flex;
+}
+
+.title {
+  max-width: 445px;
+  margin: 15px;
+  color: #c3002f;
+  display: flex;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  margin: 0px 0px 0px 15px;
+}
+
+p {
+  font-size: 25px;
+  padding-right: 15px;
+  line-height: 1;
+  cursor: context-menu;
+  text-align: left;
+  margin: auto;
+}
+
+.right {
+  float: right;
+  display: flex;
+}
+
+.A-icon {
+    width: 50px;
+    vertical-align: middle;
+  }
+
+a {
+  margin-right: 10px;
+  font-size: 25px;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.navigation {
+  background-color: #acaaa9;
+}
+
+.navigation:hover {
+  background-color: black;
+  cursor: pointer;
+  color: white;
+  transition: background-color 2s, color 500ms, font-size 500ms linear;
+}
+
+.navigation:active, .navigation:focus {
+  background-color: #acaaa9;
+  cursor: context-menu;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+
+@media (max-width: 485px) {
+  p {
+    font-size: 20px;
+  }
+  a {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 515px) {
+.toolbar {
+  display: block;
+}
+.A-icon {
+  width: 40px;
+}
+}
