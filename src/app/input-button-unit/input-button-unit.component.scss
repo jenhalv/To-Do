@@ -7,6 +7,10 @@
   flex-grow: 1;
 }
 
+input:focus {
+  background-color: yellow;
+}
+
 :host(:not([hidden])) {
   display: flex;
   justify-content: space-between;

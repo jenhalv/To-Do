@@ -1,6 +1,5 @@
 <div>
   <input type="checkbox"
-          class="todo-checkbox"
           (click)="completeItem()"
           [checked]="item.completed"/>
 
@@ -8,5 +7,6 @@
         {{ item.title }}</span>
 
   <span (click)="removeItem()" class="material-icons-outlined" alt="delete">delete_forever</span>
+  <!-- <span (click)="updateItem()" style="padding-right: 10px;" class="material-icons-outlined" alt="edit">edit</span> -->
 
 </div>

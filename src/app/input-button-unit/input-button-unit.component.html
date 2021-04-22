@@ -3,7 +3,10 @@
   <input
   class="todo-input"
   #inputElementRef
-  [value]="title"
+  [value]=""
+  placeholder="Add an item!"
+  onfocus="this.value = ''"
+  minlength="1"
   (keyup.enter)="submitValue($event.target.value)">
 
 <button class="btn" (click)="submitValue(inputElementRef.value)">

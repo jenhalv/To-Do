@@ -7,7 +7,7 @@ h1, p, ul, li {
   padding: 0;
   border: 0;
   font: inherit;
-  vertical-align: baseline;
+  // vertical-align: baseline;
 }
 // html {
 //   scroll-behavior: smooth;
@@ -18,7 +18,7 @@ body {
   margin-top: 35px;
   background: #f1f1f1;
   font-size: 16px;
-  line-height: 22px;
+  // line-height: 22px;
   color: #404040;
   font-family: 'Lucida Grande', Verdana, sans-serif;
 }
@@ -45,4 +45,45 @@ ol, ul {
   color: white;
   cursor: pointer;
   transition: background-color .5s, color 500ms, font-size 500ms linear;
+}
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 100%;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  // bottom: 125%;
+  // left: 50%;
+  // margin-left: -60px;
+  bottom: 95%;
+  left: 10%;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }

@@ -7,6 +7,7 @@ import { TodoItem } from '../interfaces/todo-item';
   templateUrl: './list-manager.component.html',
   styleUrls: ['./list-manager.component.scss']
 })
+
 export class ListManagerComponent implements OnInit {
   title = 'To-Do-List';
   todoList: TodoItem[];

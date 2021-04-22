@@ -10,6 +10,7 @@ export class TodoItemComponent implements OnInit {
   @Input() item: TodoItem;
   @Output() remove: EventEmitter<TodoItem> = new EventEmitter<TodoItem>();
   @Output() update: EventEmitter<any> = new EventEmitter<any>();
+  @Output() submit: EventEmitter<string> = new EventEmitter<string>();
 
   constructor() { }
 
@@ -19,6 +20,14 @@ export class TodoItemComponent implements OnInit {
   removeItem(): void {
     this.remove.emit(this.item);
   }
+
+  updateItem(newTitle: string): void {
+    this.submit.emit(newTitle);
+  }
+
+  // submitValue(newTitle: string): void {
+  //   this.submit.emit(newTitle);
+  // }
 
   completeItem(): void {
     this.update.emit({
